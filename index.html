@@ -23,7 +23,13 @@
     <link rel="stylesheet" href="fonts/ProximaNova-Regular.woff2" />
     <link rel="stylesheet" href="fonts/ProximaNovaA-Bold.woff2" />
     <link rel="stylesheet" href="fonts/GotchaStandup.woff2">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <!-- CSS Ends-->
   </head>
 
@@ -101,7 +107,7 @@
         <div class="banner_img">
             <img src="img/banner 1.svg" alt="">
           </div>
-          <div class="banner_inner1">
+          <!-- <div class="banner_inner1">
             <div class="banner_inner1_text">
              <p class="para1">Feeling Better</p>
              <p class="para2">Begins with Better Therapy.</p>
@@ -112,7 +118,7 @@
                <button>Sign Up</button>
              </div>
             </div>
-         </div>
+         </div> -->
         </section>
         <div class="banner_bottom">
            <div class="container">
@@ -245,6 +251,78 @@
 
 
     <!-- Tharepy Section Ends -->
+    <section class="sec_tharepist">
+      <div class="sec_tharepist_inner">
+        <p class="tharepist_para1">You Deserve Effective Therapy</p>
+        <p class="tharepist_para2">A highly trained, skilled and vetted therapist makes all the difference</p>
+      </div>
+  </section>
+
+    <!-- Carousel Section Start -->
+
+         <section class="carousel">
+          <div class="carousel_main">
+            <div class="people_bottom_img top_img">
+              <img src="img/“.svg" alt="">
+          </div>
+            <div class="carousel_inner">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <h2 class="carousel_heading">What our clients have to say</h2>
+                  <p>“My problems with anxiety and depression have persisted for years despite previous
+                     therapy and medication treatment. Coming to the Feeling 
+                    Good Institute may be one of the most important things I've done in my life for my happiness and well being.”</p>
+                  <p>Eric L.</p>
+                </div>
+                <div class="item">
+                  <h2 class="carousel_heading">What our clients have to say</h2>
+                  <p>“My problems with anxiety and depression have persisted for years despite previous
+                     therapy and medication treatment. Coming to the Feeling 
+                    Good Institute may be one of the most important things I've done in my life for my happiness and well being.”</p>
+                  <p>Eric L.</p>
+                </div>
+                <div class="item">
+                  <h2 class="carousel_heading">What our clients have to say</h2>
+                  <p>“My problems with anxiety and depression have persisted for years despite previous
+                     therapy and medication treatment. Coming to the Feeling 
+                    Good Institute may be one of the most important things I've done in my life for my happiness and well being.”</p>
+                  <p>Eric L.</p>
+                </div>                       
+            </div>
+            </div>
+            <div class="carousel_btn">
+               <div class="prev_btn">
+                 <button class="leftarrow btn1"> <i class="fa-solid fa-angle-left"></i></button>
+               </div>
+               <div class="next_btn">
+                 <button class="rightarrow btn1"> <i class="fa-solid fa-angle-right"></i></button>
+               </div>
+            </div>
+
+          </div>
+
+
+         </section>
+
+    <!-- Carousel Section Ends -->
+
+
+      <section>
+        
+      </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
      <section class="other_section">
 
@@ -392,6 +470,31 @@
         dropdown.style.left = "-100%";
        // body.style.overflow = "visible";
       });
+
+      //owl Carousel
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+     $(".leftarrow").click(function (e) {
+        $(".owl-carousel").trigger("prev.owl"); 
+      });
+      $(".rightarrow").click(function (e) {
+        $(".owl-carousel").trigger("next.owl"); 
+      });
+
     </script>
   </body>
   <!-- Body Ends-->

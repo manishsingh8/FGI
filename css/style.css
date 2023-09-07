@@ -193,17 +193,15 @@ ul li a:hover::after {
 }
 .banner_img {
   width: 100%;
-  height: 0%;
   position: relative;
   overflow: hidden;
-  padding-top: 616px;
+  padding-top: 53%;
 }
 .banner_img img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
   position: absolute;
-  z-index: 99;
   inset: 0;
 }
 .banner_inner1 {
@@ -295,10 +293,10 @@ ul li a:hover::after {
   display: flex;
   align-items: center;
 }
-.banner2_btn:hover{
-  background-color:#436986;
-  color:#fff;
-} 
+.banner2_btn:hover {
+  background-color: #436986;
+  color: #fff;
+}
 
 /* banner section ends */
 
@@ -334,14 +332,14 @@ ul li a:hover::after {
   background-color: #436986;
   padding: 70px 0px 105px 0px;
 }
-.people::before{
+.people::before {
   content: "";
   position: absolute;
-  bottom: -25px; /* Adjust this value to control the depth of the curve */
+  bottom: -25px;
   left: 0;
   right: 0;
-  height: 50px; /* Adjust this value to control the curve's height */
-  background-color:#fff; /* Match the background color */
+  height: 50px;
+  background-color: #fff;
   border-radius: 50%;
 }
 .people1 {
@@ -352,8 +350,8 @@ ul li a:hover::after {
 .people_item {
   text-align: center;
 }
-.people_item h2{
-    color:#ffee00;
+.people_item h2 {
+  color: #ffee00;
 }
 .people2 {
   /* border: 1px solid red; */
@@ -366,7 +364,7 @@ ul li a:hover::after {
   width: 47%;
   /* border: 1px solid white; */
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 15px;
 }
 .people_con_img1 {
@@ -408,9 +406,6 @@ ul li a:hover::after {
   inset: 0;
   object-fit: cover;
 }
-
-
-
 .people2_item2 {
   width: 47%;
   display: flex;
@@ -418,94 +413,152 @@ ul li a:hover::after {
   justify-content: space-between;
   align-items: flex-start;
 }
-.people_heading{
+.people_heading {
   margin-bottom: 1.5rem;
   color: #ffffff;
   font-weight: 700;
 }
-.people_btn{
+.people_btn {
   margin-top: 1.5rem;
-    background-color: #436986;
-    color: #ffffff;
-    border: 1px solid #ffee00;
+  background-color: #436986;
+  color: #ffffff;
+  border: 1px solid #ffee00;
 }
-.people_btn:hover{
+.people_btn:hover {
   background-color: #ffee00;
   color: #111112;
 }
 
-.people_bottom_img{
-  height:50px;
+.people_bottom_img {
+  height: 50px;
   width: 50px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: -5px;
-  left: 50%;
-  box-shadow: 3px 8px 20px rgba(82, 81, 81, .7);
+  left: 46%;
+  box-shadow: 3px 8px 20px rgba(82, 81, 81, 0.7);
 }
 
 /*people section ends  */
 
-
 /* Tharepy Section Start */
 
-.tharepy_section{
+.tharepy_section {
   padding: 50px 70px;
 }
-.tharepy_heading{
+.tharepy_heading {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.tharepy_inner{
+.tharepy_inner {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
 }
 
-.tharepy_inner_item{
+.tharepy_inner_item {
   width: 100%;
   padding-top: 100%;
   overflow: hidden;
   position: relative;
 }
-.tharepy_inner_item img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    inset: 0;
+.tharepy_inner_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
 }
-.tharepy_main p{
+.tharepy_main p {
   color: #111112;
   text-align: center;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 0px;
 }
-.tharepy_btn{
+.tharepy_btn {
   margin-top: 30px;
   width: 100%;
   text-align: center;
 }
 
+/* Tharepy section ends */
 
+/* carousel section start */
 
+.carousel {
+  background-color: #436986;
+  width: 100%;
+}
+.carousel_main {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 50px 0px;
+}
+.carousel_main .top_img{
+  top:-25px;
+}
+.carousel_inner {
+  width: 45%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+}
+.carousel_inner .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+.carousel_heading {
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+.carousel_btn {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 70px;
+}
+.carousel_btn .prev_btn .btn1,
+.next_btn .btn1 {
+  outline: none;
+  border: none;
+  background-color: #436986;
+  color: #ffee00;
+  font-size: 35px;
+  cursor: pointer;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+  background:#ffee00 ;
+  outline: none;
+}
+.owl-theme .owl-dots .owl-dot{
+  border: none;
+  outline: none;
+}
 
-
+/* carousel section ends */
 
 .other_section {
   height: 5000px;
 }
-
-
-
 
 /* Footer */
 footer {
@@ -681,27 +734,24 @@ footer {
     width: 100%;
     margin-top: 20px;
   }
-  
 
   .sec_tharepist_inner {
     padding: 70px 15px;
     text-align: start;
   }
- .people1{
-  grid-column-gap: 0;
- }
-  .people2{
-      flex-direction: column;
+  .people1 {
+    grid-column-gap: 0;
   }
-  .people2_item1{
+  .people2 {
+    flex-direction: column;
+  }
+  .people2_item1 {
     width: 100%;
   }
-  .people2_item2{
+  .people2_item2 {
     width: 100%;
     margin-top: 50px;
   }
-
-
 
   .footer_item {
     display: grid;
@@ -718,13 +768,16 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    
-  .tharepy_inner{
-     grid-template-columns: repeat(2,1fr);
-     grid-row-gap: 20px;
+  .tharepy_inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
   }
-
-
+.carousel_inner {
+  width: 70%;
+}
+.carousel_btn{
+  padding: 0px 15px;
+}
   .footer_item {
     width: 60%;
   }
@@ -755,12 +808,11 @@ footer {
   }
 }
 
-@media screen and (max-width:575px) {
-    .tharepy_section{
-      padding: 50px 15px;
-    }
+@media screen and (max-width: 575px) {
+  .tharepy_section {
+    padding: 50px 15px;
+  }
 }
-
 
 @media screen and (max-width: 550px) {
   .footer1_btn {
