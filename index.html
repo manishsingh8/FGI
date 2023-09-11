@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="fonts/ProximaNova-Extrabld.woff2" />
     <link rel="stylesheet" href="fonts/ProximaNova-Regular.woff2" />
     <link rel="stylesheet" href="fonts/ProximaNovaA-Bold.woff2" />
-    <link rel="stylesheet" href="fonts/GotchaStandup.woff2">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -30,6 +29,9 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <!-- CSS Ends-->
   </head>
 
@@ -103,22 +105,25 @@
       <!--Header Ends-->
       
       <!--Banner Starts-->
+      <!-- #80808026 -->
       <section class="banner_section">
         <div class="banner_img">
             <img src="img/banner 1.svg" alt="">
           </div>
-          <!-- <div class="banner_inner1">
+          <div class="banner_inner1">
             <div class="banner_inner1_text">
              <p class="para1">Feeling Better</p>
              <p class="para2">Begins with Better Therapy.</p>
              <p class="para3">Get matched with a therapist proven and vetted to help you feel better faster.</p>
              <p class="para4">Find a Therapist <img src="img/c 1.svg" alt=""></p>
              <div class="banner1_btn">
-               <input type="text" placeholder="Your Email" />
-               <button>Sign Up</button>
+              <div class="input_div">
+                <input type="text" placeholder="Near: Sunnyvale, CA"/>
+              </div> 
+               <button id="banner_btn" class="custom_button banner_btn">Get matched!</button>
              </div>
             </div>
-         </div> -->
+         </div>
         </section>
         <div class="banner_bottom">
            <div class="container">
@@ -152,12 +157,13 @@
           <div class="container">
             <div class="people1">
                 <div class="people_item">
-                  <h2>8x</h2>
+                  
+                  <h2>8<span style="font-weight: 400; font-size: 25px;">x</span></h2>
                   <p>More effective than other treatment approaches*</p>
 
                 </div>
                 <div class="people_item">
-                  <h2>30%</h2>
+                <h2>30<span style="font-weight: 400;">%</span></h2>
                   <p>Average amount of suffering reduced per therapy hour*</p>
 
                 </div>
@@ -264,7 +270,7 @@
          <section class="carousel">
           <div class="carousel_main">
             <div class="people_bottom_img top_img">
-              <img src="img/“.svg" alt="">
+              <img src="img/image1.svg" alt="">
           </div>
             <div class="carousel_inner">
               <div class="owl-carousel owl-theme">
@@ -364,6 +370,45 @@
     <!-- Path Section Ends -->
 
     
+    <section class="training_section">
+      <div class="training_heading">
+        <h2>Accredited by top organizations to provide advanced psychotherapy training</h2>    
+      </div>
+      <div class="training_inner">
+          <div class="training_item">
+            <div class="training_img">
+               <img src="img/apasponsor-large_tcm7-173880 1.svg" alt="">
+            </div>
+          </div>
+          <div class="training_item">
+            <div class="training_text">
+                <p>The Feeling Good Institute is approved by the American Psychological Association to sponsor continuing education for psychologists.
+                   The Feeling Good Institute maintains responsibility for this program and its content.”</p>
+            </div>
+          </div>
+          <div  class="training_item">
+             <div class="training_img">
+                <img src="img/acep-300dpi 1.svg" alt="">
+             </div>
+          </div>
+          <div  class="training_item">
+            <div class="training_img">
+               <img src="img/ACE logo BLUE (1) 2.svg" alt="">
+            </div>
+          </div>
+          <div  class="training_item">
+            <div class="training_img img3">
+                <img src="img/NAADC 1.svg" alt="">
+            </div>
+          </div>
+      </div>
+  </section>
+ 
+
+
+
+
+
 
     <!-- News Secton Start -->
      <section class="news_section">
@@ -381,7 +426,7 @@
                    <h5>How to learn to handle stress in a global crisis</h5>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy. Read More
+                    Lorem Ipsum has been the industry's standard dummy.
                     </p>           
             </div>
           </div> 
@@ -396,7 +441,7 @@
                <h5>How to learn to handle stress in a global crisis </h5>
                <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy. Read More
+                Lorem Ipsum has been the industry's standard dummy.
                </p>
             </div>
           </div> 
@@ -411,7 +456,7 @@
                <h5>How to learn to handle stress in a global crisis</h5>
                <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy. Read More
+                Lorem Ipsum has been the industry's standard dummy.
                </p>
             </div>     
           </div>
@@ -422,6 +467,7 @@
 
 <!-- News Section Ends -->
 
+      
 
 
 
@@ -443,8 +489,10 @@
                 <p class="footer1_para2">High-quality content. Zero spam.</p>
               </div>
               <div class="footer1_btn">
-                <input type="text" placeholder="Your Email" />
-                <button>Sign Up</button>
+                <div class="input_div">
+                  <input type="text" placeholder="Your Email" />
+                </div> 
+                 <button id=" footer_btn" class="custom_button footer_btn">Sign Up</button>
               </div>
             </div>
             <div class="footer_inner1">
@@ -552,6 +600,7 @@
     <!-- JS Ends-->
 
     <script>
+
       var hamburger = document.getElementById("hamburger_icon");
       var cross = document.getElementById("cross_icon");
       var dropdown = document.getElementById("dropdown");
@@ -571,6 +620,38 @@
         dropdown.style.left = "-100%";
        body.style.overflow = "visible";
       });
+
+    // banner btn
+ // Get a reference to the button element
+ 
+const bannerButton = document.getElementById("banner_btn");
+const footerButton = document.querySelector(".footer_btn");
+
+// Function to add the custom_button class to the banner button when the viewport is less than 1150px
+function addCustomButtonClassForBanner() {
+    if (window.innerWidth <= 1150) {
+        bannerButton.classList.add("custom_button");
+    } else {
+        bannerButton.classList.remove("custom_button");
+    }
+}
+
+// Function to add the custom_button class to the footer button when the viewport is less than 1150px
+function addCustomButtonClassForFooter() {
+    if (window.innerWidth <= 1150) {
+        footerButton.classList.add("custom_button");
+    } else {
+        footerButton.classList.remove("custom_button");
+    }
+}
+
+// Add the custom_button class when the page loads
+addCustomButtonClassForBanner();
+addCustomButtonClassForFooter();
+
+// Add event listeners to check the viewport width on resize for both buttons
+window.addEventListener("resize", addCustomButtonClassForBanner);
+window.addEventListener("resize", addCustomButtonClassForFooter);
 
       //owl Carousel
       $('.owl-carousel').owlCarousel({
@@ -606,42 +687,3 @@
 
 
 
-
-  <!-- <div class="path_main">
-               <div class="path_inner">
-                   <div class="path_img">
-                      <img src="img/Edition 2.svg" alt="">
-                   </div>                
-                    <div class="path_text_inner">
-                      <div class="number">1</div>
-                      <h4>Get Matched</h4>
-                      <p>Tell us about your needs and preferences and choose your therapist.</p>
-                    </div>
-               </div>
-            </div> -->
-
-             <!-- .path_text{
-              border:1px solid black;
-              position: relative;
-              width: 60%;
-            }  -->
-             <!-- .path_inner{
-              width: 100%;
-              border: 1px solid red;
-              display: flex;
-              position: relative;
-             } 
-             .path_img{
-              width: 70%;
-              padding-top: 46%;
-              overflow: hidden;
-              object-fit: cover;
-              position: relative;
-              border: 2px solid green;
-            }
-            .path_img img{
-              width: 100%;
-              height: 100%;
-              inset: 0;
-              position: absolute;
-            }  -->
